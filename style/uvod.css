@@ -1,0 +1,47 @@
+body {
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: beige;
+  margin: 1rem;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  background-color: blanchedalmond;
+  font-size: 2rem;
+  padding: 2rem;
+  margin: 2rem;
+  transition: background-color 0.5s ease;
+  border: 2px solid black;
+}
+
+a:hover {
+  background-color: rgb(253, 211, 149);
+  color: white;
+  width: 100%;
+}
+
+strong {
+  font-size: 1.5rem;
+  padding: 1rem;
+  background-color: rgb(255, 225, 185);
+  border-radius: 2px;
+  border: 3px solid black;
+}
+
+img {
+    border-radius: 2px;
+}
+
+#a {
+    margin-top: 5rem;
+}
+
+#b {
+    margin-bottom: 5rem;
+}

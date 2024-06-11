@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.8792893866530987) 0%,
+    rgba(50, 50, 50, 1) 50%
+  );
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 3rem;
+  overflow: hidden;
+  display: flex; /* Prevent scrolling */
+}
+
+p {
+  color: rgb(204, 204, 204);
+  margin-left: 4rem;
+}
+
+a {
+  text-decoration: none;
+  text-align: right;
+  color: black;
+  background-color: antiquewhite;
+  font-size: 1.5rem;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 2px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+a:hover {
+  background-color: rgb(131, 131, 131);
+}
+
+button {
+  margin-left: 4rem;
+  padding: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: rgb(131, 131, 131);
+}
+
+#opis {
+  background-color: rgb(168, 168, 168);
+  color: black;
+  margin-left: 4rem;
+  margin-top: 4rem;
+  border-radius: 4px;
+  font-size: 1.25rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+.parag {
+  color: black;
+  margin: auto;
+}
+
+#warn {
+  color: rgb(204, 76, 76);
+}
+
+#mandelbrot-canvas {
+  display: block;
+  margin: 0;
+}

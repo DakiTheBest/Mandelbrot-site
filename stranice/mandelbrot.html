@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mandelbretov Skup</title>
+    <link rel="stylesheet" href="/style/viz.css" />
+  </head>
+  <body>
+    <canvas id="mandelbrot-canvas"></canvas>
+    <div>
+      <p>Trenutno Zumiranje: <strong id="zoomlvl">1</strong>x</p>
+      <p>Ponavljanja: <strong id="iter">100</strong></p>
+      <button id="reset">Resetuj</button>
+
+      <div id="opis">
+        <h2>Kako funkcioniše:</h2>
+        <p class="parag">
+          Ovo je prosta simulacija Mandelbrotovog skupa uz korišćenje
+          JavaScripta. Kako bi slika bila što kvalitetnija i bez velikog
+          usporenja učitavanja same figure, ponvaljanja funkcije se vrše kako
+          smo više zumirani u sliku i obratno.
+        </p>
+        <p class="parag">
+          <strong>Trenutno Zumiranje</strong> prikazuje trenutni nivo
+          uveličanja. Zumira se pomoću točkića na mišu.
+          <u> Zum je ograničen na 1 trilionu (1e12)</u> zbog pikselizacije koja
+          se stvara nakon što zoom prevaziđe 2 milijarde.
+        </p>
+        <p class="parag">
+          <strong>Ponvaljanja</strong> prikazuje ukupna ponavljanja funkcije za
+          trenutno prikazanu sliku. Pri svakom zumiranju formula se ponavlja 8
+          puta.
+        </p>
+        <p id="warn">
+          Imajte na umu da program može znatno da uspori u određenim mjestima na
+          skupu.
+        </p>
+        <p>Kliknite/Zumirajte u sliku da počnete!</p>
+      </div>
+    </div>
+    <p><a href="index.html">Početna Strana</a></p>
+    <script src="/script/mandelbrot.js"></script>
+  </body>
+</html>
